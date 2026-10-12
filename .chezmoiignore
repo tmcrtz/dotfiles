@@ -1,6 +1,8 @@
 {{ if ne .chezmoi.os "windows" }}
-vimfiles\coc-settings.json
+vimfiles/**
+vimfiles/coc-settings.json
 {{ end }}
 {{ if ne .chezmoi.os "linux" }}
-~/.vim/coc-settings.json
-{{end}}
+.vim/**
+.vim/coc-settings.json
+{{ end }}
