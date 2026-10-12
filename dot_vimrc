@@ -13,6 +13,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/vim-easy-align'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
@@ -27,6 +28,8 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
+
+let g:coc_global_extensions = ['coc-pyright', 'coc-rust-analyzer', 'coc-clangd']
 " COC example config
 
 " https://raw.githubusercontent.com/neoclide/coc.nvim/master/doc/coc-example-config.vim

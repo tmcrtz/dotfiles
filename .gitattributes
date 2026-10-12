@@ -1,0 +1,2 @@
+# Text files all end with lf unless overriden
+* text=auto eol=lf
